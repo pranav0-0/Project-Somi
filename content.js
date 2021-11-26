@@ -1,12 +1,10 @@
-// console.log("Test Test");
-// let content = document.body.innerHTML;
 window.onload = function get_body() {
 
-    let content = document.getElementsByTagName('body')
+    let content = document.getElementsByTagName('*')
+    let aWord = /shit| fuck| piss| bitch| ass/i;
+    var count = 0;
     for (let i = 0; i < content.length; i++) {
-        // console.log(content[i].innerHTML);
-        if (content[i].innerHTML.includes("Chutiya")) {
-            content[i].innerHTML = content[i].innerHTML.replace("Chutiya", "***");
-        }
+        content[i].innerHTML = content[i].innerHTML.replace(aWord, "*****",count++);
     }
-}   
+    console.log(count);
+}
