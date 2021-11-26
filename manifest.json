@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Project Somi",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Project Somi",
     "author": "TY Comp",
     "browser_action": {
@@ -9,7 +9,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://*/*"],
+            "matches": ["https://*.com/*"],
             "js": ["content.js"]
         }
     ]
