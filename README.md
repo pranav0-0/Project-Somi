@@ -1,4 +1,3 @@
-# Project-Somi
 Welcome to the Project-Somi wiki!
 * Project Planning 
 
@@ -28,3 +27,9 @@ _progress 25%_
 _progress 100%_
 ***
 
+* 1st Presentation
+
+> 06-12-2021 to 06-12-2021
+
+_progress 0%_
+***
