@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Inter';
+    /* background-image: url(BG.png); */
+    /* background-position-x: center; */
+    height: 400px;
+    width: auto;
+    width: 350px;
+}
+/* .lastBox{
+    height: 75vh;
+    width: 75vw;
+} */
+/* centre class lastBox */
+.lastBox{
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#Test{
+    margin: auto;
+    margin-top: 10vh;
+    margin-left: 5vh;
+    font: 2.1em sans-serif;
+}
+#number{
+    margin: auto;
+    margin-top: 10vh;
+    margin-left: 25vh;
+    font: 2.1em sans-serif;
+}
