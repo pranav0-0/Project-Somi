@@ -5,12 +5,19 @@
     "description": "Project Somi",
     "author": "TY Comp",
     "browser_action": {
-        "default_icon": "/Somi.png"
+        "default_icon": "/Somi.png",
+        "default_popup": "/popup.html",
+        "default_title": "a popup window"
     },
     "content_scripts": [
         {
             "matches": ["https://*/*"],
             "js": ["content.js"]
         }
-    ]
+    ],
+    "background": {
+        
+        "scripts": ["background.js"],
+        "persistent": false
+    }
 }
