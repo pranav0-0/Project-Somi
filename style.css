@@ -4,37 +4,25 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    background-color: #7be495;
+    font-family: 'Prompt', sans-serif;
 }
 body{
     font-family: 'Inter';
-    /* background-image: url(BG.png); */
-    /* background-position-x: center; */
-    height: 400px;
+    height: 507px;
     width: auto;
-    width: 350px;
+    width: 313.3px;
 }
-/* .lastBox{
-    height: 75vh;
-    width: 75vw;
-} */
-/* centre class lastBox */
+
 .lastBox{
-    margin: auto;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    display: none;
 }
 
 #Test{
-    margin: auto;
-    margin-top: 10vh;
-    margin-left: 5vh;
-    font: 2.1em sans-serif;
+    /* display: none; */
+    font-size: 1.64em;
 }
 #number{
-    margin: auto;
-    margin-top: 10vh;
-    margin-left: 25vh;
-    font: 2.1em sans-serif;
+    /* display: none; */
+    font-size: 1.64em;
 }
