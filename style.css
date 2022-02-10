@@ -13,12 +13,13 @@ body{
     width: 313.3px;
 }
 
-.lastBox{
-    display: none;
+h5{
+    text-align: center;
 }
 
 #Test{
     /* display: none; */
+    margin-top: 45px;
     font-size: 1.64em;
 }
 #number{
