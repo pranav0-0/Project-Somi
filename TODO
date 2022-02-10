@@ -2,4 +2,4 @@ Create dummy HTML for refrence  -> popup.html       [Done]
 Add onConnect to popup.html     -> popup.html       [Done]
 Add CSS to popup.html           -> popup.html
 Add more Words to content.js    -> content.js
-Store Word count value          -> background.js    [Done]
+Store Word count value          -> background.js
