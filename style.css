@@ -26,3 +26,12 @@ h5{
     /* display: none; */
     font-size: 1.64em;
 }
+footer {
+    bottom: 0%;
+    position: fixed;
+}
+.hint{
+    font-size: 11px;
+    font-style: italic;
+    color: #34a350;
+}
