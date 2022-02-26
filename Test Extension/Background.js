@@ -1,9 +1,9 @@
 words = {
-    test: 69
+    test: /the/i,
 }
-var ab = /suck |dick |fuck |shit/i;
+var ab = /is/i;
 
-chrome.storage.local.set({test: words}, function() {
+chrome.storage.local.set({test: ab}, function() {
     console.log('Set func\nValue is set');
 })
 

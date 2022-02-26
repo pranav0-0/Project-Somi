@@ -2,24 +2,23 @@ if(document.readyState=="complete"){
     textReplace();
 }
 var count=0;
-chrome.storage.local.get(['test'], function(result) {
+
+chrome.storage.local.get(function(result) {
     console.log('Get func\nValue is set to ');
-    console.log(result.test.totalWords);
+    console.log(result.test);
+
 })
 
 var conContent = chrome.runtime.connect({name: "connected-content"});
+var aWord = /toast/i;
 
 function textReplace() {
     var selectedSpan = document.getElementsByTagName("span");
     for (let i = 0; i < selectedSpan.length; i++) {
-        selectedSpan[i].innerHTML = selectedSpan[i].innerText.replace(/toast/i,function(x){count+=1;return " *** "});
+        selectedSpan[i].innerHTML = selectedSpan[i].innerText.replace(aWord,function(x){count+=1;return " *** "});
     }
     conContent.postMessage({count: count});
     console.log("No. Text replaced: " + count);
-    // observer.disconnect();
-    // if(document.readyState!="loading"){
-    // observer.observe(document.body, {childList: true, subtree: true});
-    // }
 }
 
 var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
