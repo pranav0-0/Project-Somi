@@ -8,11 +8,76 @@
     font-family: 'Prompt', sans-serif;
 }
 body{
-    height: 507px;
+    height: 552px;
+    width: 313px;
+    background-color: #7be495;
+}
+nav{
+    background-color: #7be495;
+    height: 80px;
     width: auto;
-    width: 313.3px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: block;
+    line-height: 80px;
+    margin: 15px 15px;
+    background-color: #429657;
+}
+nav ul li a{
+    color: cornsilk;
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    margin-right: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #429657;
+}
+a:hover,a.active
+{
+    font-size: 22px;
+    text-decoration: none;
+    color: #7be495;
+}
+.checkBtn{
+    float: right;
+    line-height: 73px;
+    margin-right: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul
+{
+    left: 0;
+}
+#check:checked ~ footer{
+    display: none;
 }
 
+ul.temp{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #429657;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+.logo{
+    position: relative;
+    text-align: center;
+}
+h3{
+    color: black;
+}
 h5{
     text-align: center;
 }
@@ -29,9 +94,11 @@ h5{
 footer {
     bottom: 0%;
     position: fixed;
+    width: 100%
 }
 .hint{
     font-size: 11px;
     font-style: italic;
-    color: #34a350;
+    width: 100%;
+    color: #429657;
 }
