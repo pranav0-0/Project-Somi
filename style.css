@@ -4,12 +4,13 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    background-color: #7be495;
     font-family: 'Prompt', sans-serif;
 }
 body{
     height: 552px;
     width: 313px;
+    background-image: url(/Preview/leaf.gif);
+    background-position: center;
     background-color: #7be495;
 }
 nav{
@@ -45,7 +46,7 @@ a:hover,a.active
 }
 .checkBtn{
     float: right;
-    line-height: 73px;
+    margin-top: 25px;
     margin-right: 25px;
     cursor: pointer;
     box-sizing: border-box;
@@ -74,9 +75,6 @@ ul.temp{
 .logo{
     position: relative;
     text-align: center;
-}
-h3{
-    color: black;
 }
 h5{
     text-align: center;
