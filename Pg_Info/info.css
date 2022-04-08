@@ -9,4 +9,22 @@
 body{
     height: 552px;
     width: 313px;
+    background-color: rgb(68, 82, 94);
+}
+nav{
+    background-color: #7be495;
+    height: 80px;
+    width: auto;
+}
+.logo{
+    position: relative;
+    text-align: center;
+    size: 5vh;
+}
+.checkBtn{
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
 }
