@@ -9,4 +9,58 @@
 body{
     height: 552px;
     width: 313px;
+    background-color: rgb(68, 82, 94);
+}
+nav{
+    background-color: #7be495;
+    height: 80px;
+    width: auto;
+}
+.logo{
+    position: relative;
+    text-align: center;
+    size: 5vh;
+}
+.checkBtn{
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#crIcon{
+    display: block;
+    margin-top: 3.5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.coRightText{
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+p#p1{
+    margin-top: 3.5vh;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2vh;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 15.5px;
+    color: aliceblue;
+}
+.author{
+    margin-top: 3.5vh;
+    line-height:18px;
+    font-size: 14px;
+    color: aliceblue;
+}
+footer{
+    background-color: rgb(48, 44, 44);
+    height: 50px;
+    width:100%;
+    margin-bottom: 0%;
+    margin-top: 10px;
 }
