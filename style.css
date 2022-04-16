@@ -22,27 +22,49 @@ nav ul{
     float: right;
     margin-right: 20px;
 }
-nav ul li{
+div.option{
     display: block;
-    line-height: 80px;
-    margin: 15px 15px;
-    background-color: #429657;
+    float: left;
+    margin-left: 5%;
+    margin-top: 20vh;
+}
+
+nav ul li{
+    width: auto;
+    line-height: 50px;
+    left: 0%;
+    text-align: left;
 }
 nav ul li a{
-    color: cornsilk;
     border-radius: 8px;
     text-transform: uppercase;
     padding: 7px 13px;
     margin-right: 25px;
-    font-size: 15px;
-    text-decoration: none;
-    background-color: #429657;
 }
 a:hover,a.active
 {
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
-    color: #7be495;
+    color: cornsilk;
+}
+#lImg{
+    position: fixed;
+    width: 313px;
+    height: 200px;
+    bottom: 0%;
+}
+.lscape{
+    position: absolute;
+}
+.fIcon{
+    position: fixed;
+    bottom: 8%;
+}
+.iconImg.No1{
+    margin-left: 75px;
+}
+.iconImg{
+    margin-right: 20px;
 }
 .checkBtn{
     float: right;
@@ -54,19 +76,37 @@ a:hover,a.active
 #check{
     display: none;
 }
-#check:checked ~ ul
+#check:checked ~ ul.temp
 {
     left: 0;
 }
-#check:checked ~ footer{
-    display: none;
+#check:checked ~ ul .option #li1{
+    animation: lateIn .9s ease-in;
+}
+#check:checked ~ ul .option #li2{
+    animation: lateIn .8s ease-in;
+}
+#check:checked ~ ul .option #li3{
+    animation: lateIn .7s ease-in;
+}
+#check:checked ~ ul div.lscape{
+    display: block;
+    position:absolute;
+    /* animation: lScapeUP .9s ease-in; */
+}
+#check:checked ~ ul div.lscape img#lImg {
+    /* display: none; */
+    animation: lScapeUP .8s ease-in;
+}
+#check:checked ~ ul div.fIcon{
+    animation: lScapeUP .9s ease-in;
 }
 
 ul.temp{
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #429657;
+    background: #7be495;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -80,6 +120,7 @@ h5{
     text-align: center;
 }
 
+/* last box */
 #Test{
     /* display: none; */
     margin-top: 45px;
@@ -125,13 +166,13 @@ footer {
   }
   
   .line-menu.start {
-    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transition: transform .5s cubic-bezier(0.54, -0.81, 0.57, 0.57);
     transform-origin: right;
   }
   
   .line-menu.end {
     align-self: flex-end;
-    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transition: transform .5s cubic-bezier(0.54, -0.81, 0.57, 0.57);
     transform-origin: left;
   }
   
@@ -147,4 +188,39 @@ footer {
   
   .is-active .line-menu.end {
     transform: rotate(-90deg) translateX(-3px);
+  }
+
+@keyframes lateIn {
+    from {
+        margin-left: -20%;
+    }
+}
+@keyframes lScapeUP {
+    from{
+        bottom: -25%;
+    }
+}
+
+.active {
+    display: inline-block;
+    position: relative;
+    color: cornsilk;
+  }
+  
+  .active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: cornsilk;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .active:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
