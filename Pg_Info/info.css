@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Prompt';
 }
 body{
     height: 552px;
@@ -28,3 +28,41 @@ nav{
     cursor: pointer;
     box-sizing: border-box;
 }
+.infoImg{
+    height: 45vw;
+    width: 45vw;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+    /* margin-bottom: 20px; */
+}
+.infoContent{
+    margin: 10px;
+    color: cornsilk;
+    font-size: 14px;
+}
+p{
+    margin: 15px;
+}
+a{
+    position: inherit;
+    margin-right: 5px;
+    text-decoration: none;
+    color: cornsilk;
+    animation: popUp 0.5 1 infinite;
+}
+a#read:hover{
+    color: #7be495;
+    transition: all,.3s;
+}
+
+@keyframes popUp{
+    from { margin-bottom: 5px;}
+  to { margin: 15px; }
+}
+/* footer{
+    margin-top: 60px;
+    margin-bottom: 0px;
+    height: 40px;
+    background-color: black;
+} */
