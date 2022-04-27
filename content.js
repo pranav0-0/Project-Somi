@@ -31,9 +31,19 @@ function textReplace(){
 }
 
 function googleSearchLink(aWord,bWord,content) {
-    for (let i = 0; i < content.length; i++) {
-        content[i].innerHTML = content[i].innerHTML.replace(aWord,function(x){count+=1;return " **** "});
-        content[i].innerHTML = content[i].innerHTML.replace(bWord,function(x){count+=1;return " **** "});
+    var h3Content =  document.getElementsByTagName("h3");
+    try {
+        for (let i = 0; i < content.length; i++) {
+            content[i].innerHTML = content[i].innerHTML.replace(aWord,function(x){count+=1;return " **** "});
+            content[i].innerHTML = content[i].innerHTML.replace(bWord,function(x){count+=1;return " **** "});
+            h3Content[i].innerHTML = h3Content[i].innerHTML.replace(aWord,function(x){count+=1;return " **** "});
+            h3Content[i].innerHTML = h3Content[i].innerText.replace(bWord,function(x){count+=1;return " **** "});
+        }
+    } catch (TypeError) {
+        for (let i = 0; i < content.length; i++) {
+            content[i].innerHTML = content[i].innerHTML.replace(aWord,function(x){count+=1;return " **** "});
+            content[i].innerHTML = content[i].innerHTML.replace(bWord,function(x){count+=1;return " **** "});
+        }
     }
 }
 
