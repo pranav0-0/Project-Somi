@@ -3,6 +3,8 @@ Add onConnect to popup.html     -> popup.html       [Done]
 Add mutationObserver            -> content.js       [Done]
 Add CSS to popup.html           -> popup.html       [Done]
 Add Copyrignt.html              -> Copyrignt.html   [Done]
-Add Info.html                   -> Info.html       
+Add Info.html                   -> Info.html        [Done]
+Add more words to the database  -> WordList         [Done]
+Optimise code for specific sites-> content.js       [In Progress]
 Add more Words to content.js    -> content.js
 Store Word count value          -> background.js
