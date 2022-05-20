@@ -18,7 +18,6 @@ function getFunc() {
     })
 }
 
-
 // var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 // const observer = new MutationObserver(function(mutations) {
 //     mutations.forEach(function(mutation) {
