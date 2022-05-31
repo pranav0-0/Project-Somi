@@ -1,4 +1,4 @@
-if(document.readyState=="complete"){
+if(document.readyState=="complete" || document.readyState=="interactive"){
     textReplace();
 }
 
@@ -14,12 +14,20 @@ function textReplace(){
         var aWord = new RegExp(nonRegexWord, "i");
         if(window.location.href.includes('google.com/search?'))
         googleSearchLink(aWord,content);
+        else if(window.location.href.includes('github.io')) {
+            var allContent = document.getElementsByClassName("words");
+            for (let i = 0; i < allContent.length; i++) {
+                allContent[i].innerText = allContent[i].innerText.replace(aWord,function(x){count+=1;return " **** "});
+            }
+            console.log('github');
+            setTimeout(textReplace(),1000);
+        }
         else {
             for (let i = 0; i < content.length; i++) {
                 content[i].innerHTML = content[i].innerText.replace(aWord,function(x){count+=1;return " **** "});
             }
         }
-        console.clear();
+        // console.clear();
         console.log("Text replaced: ");
         console.log(count);
         conContent.postMessage({count: count});
